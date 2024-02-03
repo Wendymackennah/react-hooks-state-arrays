@@ -8,7 +8,7 @@ function SpicyFoodList() {
     const newFood = getNewRandomSpicyFood();
     console.log(newFood);
   }
-
+  // map returns  an array of elements and we can spread it into the existing foods state using the ... operator.
   const foodList = foods.map((food) => (
     <li key={food.id}>
       {food.name} | Heat: {food.heatLevel} | Cuisine: {food.cuisine}
